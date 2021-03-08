@@ -18,11 +18,15 @@
     "react": "^17.0.1",
     "react-dom": "17.0.1",
     "react-hooks": "^1.0.1",
+    "react-images-loaded": "^2.0.0",
     "react-responsive-masonry": "^2.1.1",
     "react-router-dom": "^5.2.0",
+    "react-spring": "^8.0.27",
     "reset-css": "^5.0.1",
     "styled-components": "^5.2.1",
-    "url-loader": "^4.1.1"
+    "url-loader": "^4.1.1",
+    "uuid": "^8.3.2",
+    "uuidv4": "^6.2.6"
   },
   "devDependencies": {
     "swiper": "^6.5.0",

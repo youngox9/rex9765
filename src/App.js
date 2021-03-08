@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { createContext, useEffect } from 'react';
 import 'reset-css';
 
 import {
@@ -10,19 +10,24 @@ import {
 
 import '~~styles/style.scss';
 import Gallery from '~~containers/Gallery';
+import Store from '~~src/Store';
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path="/">
-          <Gallery />
-        </Route>
-        <Route path="/gallery">
-          <Gallery />
-        </Route>
-      </Switch>
-    </Router>
+    <Store>
+      <Router>
+        <Switch>
+          <Route path="/">
+            <Gallery />
+          </Route>
+          <Route path="/gallery">
+            <Switch>
+              <Gallery />
+            </Switch>
+          </Route>
+        </Switch>
+      </Router>
+    </Store>
   );
 }
 
